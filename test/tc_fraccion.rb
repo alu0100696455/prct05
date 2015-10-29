@@ -1,5 +1,5 @@
-require './lib/fraccion'
-require 'test/unit'
+require 'lib/fraccion'
+require 'test-unit'
 
 class TestFraccion < Test::Unit::TestCase
 	def setup
@@ -14,5 +14,6 @@ class TestFraccion < Test::Unit::TestCase
 
 	def test_operaciones
 		assert_equal("16/21", (@frac1 + @frac2).to_s)
+		assert_equal("-2/21", (@frac1 - @frac2).to_s)
 	end
 end
