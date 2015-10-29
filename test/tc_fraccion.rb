@@ -11,4 +11,8 @@ class TestFraccion < Test::Unit::TestCase
 		assert_equal("1/3", @frac1.to_s)
 		assert_equal("3/7", @frac2.to_s)
 	end
+
+	def test_operaciones
+		assert_equal("16/21", (@frac1 + @frac2).to_s)
+	end
 end
