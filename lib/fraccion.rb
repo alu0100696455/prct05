@@ -39,4 +39,10 @@ class Fraccion
 		result.simplificar
 		return result
 	end
+
+	def*(frac = Fraccion)
+		result = Fraccion.new(@num * frac.num, @den * frac.den)
+		result.simplificar
+		return result
+	end
 end
